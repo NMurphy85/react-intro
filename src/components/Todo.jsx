@@ -1,9 +1,11 @@
 import './Todo.css'
-function Todo(){
+function Todo({name,para}){
+
     return(
         
             <div className="todo">
-        <h2>Finish Frontend</h2>
+        <h2>{ name}</h2>
+        <p>{para}</p>
         <button>Delete</button>
         </div> 
         
