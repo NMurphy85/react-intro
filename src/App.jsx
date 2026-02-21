@@ -7,6 +7,13 @@ import Title from "./components/Title.jsx";
 function App() {
   return (
     <div>
+      <div>
+      <input type="text" onChange={(event) =>{
+        console.log(event.target.value)
+      }}
+      />
+      <button>Add todo</button>
+      </div>
       <h1 />
       My Todo List
       <div className="todo__wrapper">
