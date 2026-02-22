@@ -4,15 +4,25 @@ import "./App.css";
 import Todo from "./components/Todo.jsx";
 import Modal from "./components/Modal.jsx";
 import Title from "./components/Title.jsx";
+import React,  { Component, use, useState } from 'react';
 function App() {
-  return (
+const [showModal, setModal] = useState(false)
+
+// 1. Create a "Counter.jsx" Component
+// 2. Create a default 'count' of 0
+// 3. Create a button to increment 'count' by 1
+// 4. Create a button to decrement 'count' by 1
+// 5.Import your counter in App.jsx and test it
+
+
+return (
     <div>
       <div>
       <input type="text" onChange={(event) =>{
         console.log(event.target.value)
       }}
       />
-      <button>Add todo</button>
+      <button onClick={() =>setModal(true)}>Add todo</button>
       </div>
       <h1 />
       My Todo List
@@ -25,7 +35,7 @@ function App() {
               para="victory is mine!!!"/>
       </div>
       <Title />
-      <Modal ModalName="Be sure!" />
+    {showModal && <Modal Name="Be sure!" />}
     </div>
   );
 }
