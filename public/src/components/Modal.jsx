@@ -1,7 +1,5 @@
 import "./Modal.css";
-function Modal({ ModalName , todoCancel,todoConfirm}) {
- 
- 
+function Modal({ ModalName , todoCancel}) {
   return (
     <>
       <div className="modal">
@@ -13,7 +11,7 @@ function Modal({ ModalName , todoCancel,todoConfirm}) {
           >
             Cancel
           </button>
-          <button className="btn" onClick={todoConfirm}>
+          <button className="btn" onClick={() => console.log("confirm")}>
             Confirm
           </button>
         </div>

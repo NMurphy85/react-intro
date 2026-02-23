@@ -1,11 +1,8 @@
 import './Todo.css'
 function Todo({name,todoDelete,para}){
 
-
-    
-    return(
-        
-            <div className="todo">
+function todoCancel(){
+  setModal(false)
         <h2>{ name}</h2>
         <p>{para}</p>
         <button onClick={todoDelete}>Delete</button>
