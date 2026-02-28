@@ -1,11 +1,11 @@
 import "./Modal.css";
-function Modal({ ModalName , todoCancel,todoConfirm}) {
+function Modal({ modalName , todoCancel,todoConfirm}) {
  
  
   return (
     <>
       <div className="modal">
-        <p className="modal__title">{ModalName}Delete?</p>
+            <p className="modal__title">Delete?</p>
         <div className="modal__buttons">
           <button
             className="btn btn__cancel"
